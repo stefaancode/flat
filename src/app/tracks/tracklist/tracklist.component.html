@@ -1,0 +1,24 @@
+
+
+    <clr-datagrid>
+
+
+      <clr-dg-column [clrDgField]="'id'" class="mine">id</clr-dg-column>
+      <clr-dg-column [clrDgField]="'artist'">artist</clr-dg-column>
+      <clr-dg-column [clrDgField]="'title'">title</clr-dg-column>
+      <clr-dg-column [clrDgField]="'year'">year</clr-dg-column>
+       <!--<clr-dg-row *clrDgItems="let track of tracks" (click)="selected = track" [clrDgSelected]="selected == track">-->
+      <!--<clr-dg-row *clrDgItems="let track of tracks" [routerLink]="['/tracks', track.id]">-->
+      <clr-dg-row *clrDgItems="let track of tracks" (click)="showDetail(track.id)">
+        <clr-dg-cell>{{track.id}}</clr-dg-cell>
+        <clr-dg-cell>{{track.artist}}</clr-dg-cell>
+        <clr-dg-cell>{{track.title}}</clr-dg-cell>
+        <clr-dg-cell>{{track.year}}</clr-dg-cell>
+      </clr-dg-row>
+      <clr-dg-footer>{{tracks.length}} tracks
+        <clr-dg-pagination #pagination [clrDgPageSize]="10"></clr-dg-pagination>
+      </clr-dg-footer>
+
+    </clr-datagrid>
+
+  

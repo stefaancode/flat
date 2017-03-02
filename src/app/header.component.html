@@ -1,0 +1,17 @@
+<header class="header-1">
+    <div class="branding">
+        <a routerLink="/tracks" class="nav-link">
+            <clr-icon shape="play" class="mine" size="24"></clr-icon>
+            <span class="title navtitle">MUSIC</span>
+        </a>
+    </div>
+    <div class="header-nav">
+        <a [routerLink]="['/tracks', {outlets: {'list': ['tracklist']}}]" class="nav-link" routerLinkActive="active"><span class="nav-text">The List</span></a>
+        <a routerLink="/about" class="nav-link" routerLinkActive="active"><span class="nav-text">About</span></a>
+    </div>
+    <div class="header-actions">
+        <a href="#" class="nav-link nav-icon">
+            <clr-icon shape="cog"></clr-icon>
+        </a>
+    </div>
+</header>

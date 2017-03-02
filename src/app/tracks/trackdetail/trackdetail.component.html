@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-img">
+        <youtube-player [playerId]='"player"' [width]="350" [height]="250" [videoId]=currentTrack.youtubeID> </youtube-player>
+    </div>
+    <div class="card-header">
+        <h5 class="card-title">{{currentTrack.title}} <span class="label card-label">{{currentTrack.year}}</span></h5>
+      
+    </div>
+    <div class="card-block">
+        <p class="card-text">
+        <table class="table table-vertical table-noborder table-compact">
+    <tbody>
+        <tr>
+            <th>Artist</th>
+            <td>{{currentTrack.artist}}</td>
+           
+        </tr>
+        <tr>
+            <th>Album</th>
+            <td>Silver</td>
+          
+        </tr>
+        <tr>
+            <th>Label</th>
+            <td>Innervisions</td>
+            
+        </tr>
+       
+      
+    </tbody>
+</table>
+
+       
+    </div>
+    
+    
+</div>
+

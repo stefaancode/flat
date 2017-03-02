@@ -1,0 +1,27 @@
+.card {
+    max-width: 351px;
+    /*box-shadow: 0 3px 0 0 #E44340;*/
+}
+
+.card-label {
+    margin-left: 75px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+th {
+    background-color: white;
+}
+
+h5 {
+    margin-bottom: 0px;
+}
+
+h6 {
+    margin-top: 0px;
+}

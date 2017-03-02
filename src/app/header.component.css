@@ -1,0 +1,32 @@
+.header-1 {
+    
+    border-top: 2px solid #E44340;
+}
+
+.mine {
+    color: #E44340;
+}
+
+
+
+.nav-link:hover {
+    color: #E44340;
+
+}
+
+.navtitle {
+    color: #333;
+}
+
+.nav-link::before {
+    background: #E44340;
+}
+
+.branding {
+    padding-right: 0px;
+    min-width: 150px;
+}
+
+.active {
+    border-bottom: 2px solid #E44340 !important;
+}

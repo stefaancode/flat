@@ -1,0 +1,13 @@
+.card {
+    border-left:4px solid #E44340;
+}
+
+.mine {
+    color: #E44340;
+    font-size: 14px;
+}
+
+.datagrid-foot {
+    /*border-bottom: 3px solid #E44340;*/
+   
+}
