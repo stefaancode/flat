@@ -9,7 +9,7 @@ export class TrackRouteActivator implements CanActivate {
     }
 
     canActivate(route: ActivatedRouteSnapshot){
-        const trackExists = !!this.trackservice.getTrack(+route.params['id'])
+        const trackExists = !!this.trackservice.getTrackByID(route.params['id'])
         if (!trackExists) 
             this.router.navigate(['/404'])
         return trackExists;

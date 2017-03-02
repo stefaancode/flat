@@ -8,7 +8,7 @@ import { Track } from '../shared/track';
   templateUrl: './trackdetail.component.html',
   styleUrls: ['./trackdetail.component.css']
 })
-export class TrackdetailComponent implements OnInit {
+export class TrackdetailComponent implements OnInit{
   tracks: Track[];
   currentTrack: Track;
   constructor(private trackservice: TrackService, private route: ActivatedRoute) { }
@@ -17,6 +17,10 @@ export class TrackdetailComponent implements OnInit {
     this.route.params.subscribe((params: {id: string}) => {
       this.currentTrack = this.trackservice.getTrackByID(params.id);
     });
+  }
+
+  OnChanges() {
+
   }
   
 }
